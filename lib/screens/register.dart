@@ -1,4 +1,6 @@
 // this will contain the registration logic and username password and email will be stored in firebase
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 class Register extends StatefulWidget {
@@ -8,10 +10,21 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
+  TextEditingController nameController = TextEditingController();
+  final String name ='';
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Registration'),
+          backgroundColor: Colors.greenAccent,
+        ),
+        body: TextField(
+          controller: nameController,
+        ),
+        Text(name);
+      ),
     );
   }
 }
