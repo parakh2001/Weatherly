@@ -1,6 +1,6 @@
 # weather
 
-A new Flutter project.
+This project gives realtime weather updates for desired location.
 
 ## Getting Started
 
